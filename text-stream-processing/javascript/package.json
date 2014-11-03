@@ -1,0 +1,16 @@
+{
+  "name": "text-stream-processing-javascript",
+  "version": "0.0.1",
+  "description": "Text stream processing with JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wil Moore III",
+  "license": "MIT",
+  "dependencies": {
+    "case": "^1.1.2",
+    "split": "^0.3.0",
+    "text-pipe": "^0.1.0"
+  }
+}

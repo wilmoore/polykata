@@ -1,0 +1,120 @@
+question_id: 21471096
+link: http://stackoverflow.com/questions/21471096/what-is-the-hash-resize-option-in-imagemagick
+title: "what is the hash (#) resize option in ImageMagick?"
+
+question_id: 26691589
+link: http://stackoverflow.com/questions/26691589/understanding-contradictions-found-in-vbs-offical-conventions-guidelines
+title: "Understanding contradictions found in VB&#39;s offical conventions guidelines"
+
+question_id: 26694687
+link: http://stackoverflow.com/questions/26694687/ruby-file-wont-load-for-me
+title: "Ruby file won&#39;t load for me"
+
+question_id: 26694200
+link: http://stackoverflow.com/questions/26694200/infinite-loop-when-trying-to-count-letter-frequencies
+title: "Infinite loop when trying to count letter frequencies"
+
+question_id: 26598084
+link: http://stackoverflow.com/questions/26598084/restforce-gem-salesforce-api-retuning-oauth2error-missing-oauth-token
+title: "Restforce Gem, Salesforce API retuning OAuth2::Error Missing_OAuth_Token"
+
+question_id: 26672642
+link: http://stackoverflow.com/questions/26672642/why-we-need-to-use-t-sql-over-sql-when-creating-reports-from-data-warehouse
+title: "Why we need to use T-SQL over SQL when creating reports from Data Warehouse?"
+
+question_id: 26655039
+link: http://stackoverflow.com/questions/26655039/using-cfqueryparam-with-custom-tag-nesting-native-tags-with-custom-tags
+title: "Using cfqueryparam with custom tag? Nesting native tags with custom tags"
+
+question_id: 26656599
+link: http://stackoverflow.com/questions/26656599/readmore-js-not-working-inside-bootstrap-3-modal
+title: "Readmore.js not working inside Bootstrap 3 Modal"
+
+question_id: 26692674
+link: http://stackoverflow.com/questions/26692674/cmake-how-to-import-a-module-into-a-project
+title: "CMake: How to import a &#39;module&#39; into a project?"
+
+question_id: 26694681
+link: http://stackoverflow.com/questions/26694681/having-a-list-flight-ticket-confirmation-numbers-i-require-my-app-to-check-whet
+title: "Having a list flight ticket confirmation numbers, I require my app to check whether a given confirmation number actually exists"
+
+question_id: 26694680
+link: http://stackoverflow.com/questions/26694680/ajax-polling-with-jquery-in-rails-forum-app
+title: "Ajax polling with jQuery in Rails forum app"
+
+question_id: 26694679
+link: http://stackoverflow.com/questions/26694679/jqplot-bars-color-margin
+title: "Jqplot bar&#39;s color margin"
+
+question_id: 26618039
+link: http://stackoverflow.com/questions/26618039/space-among-inputs-using-bootstrap3
+title: "Space among inputs using Bootstrap3"
+
+question_id: 26668771
+link: http://stackoverflow.com/questions/26668771/optimizing-for-critical-rendering-path-when-using-bootstrap
+title: "Optimizing for critical rendering path when using bootstrap"
+
+question_id: 26694678
+link: http://stackoverflow.com/questions/26694678/how-to-add-variables-to-twig
+title: "how to add variables to Twig"
+
+question_id: 26694305
+link: http://stackoverflow.com/questions/26694305/what-could-be-the-alternative-use-of-readobject-method-in-java
+title: "What could be the alternative use of readObject method in java?"
+
+question_id: 26694072
+link: http://stackoverflow.com/questions/26694072/python-threading-managing-chat-client-input-and-output
+title: "Python threading: managing chat client input and output"
+
+question_id: 26679160
+link: http://stackoverflow.com/questions/26679160/bootstrap-3-more-than-12-columns-in-a-row
+title: "Bootstrap 3 - More than 12 columns in a row"
+
+question_id: 25132226
+link: http://stackoverflow.com/questions/25132226/vs2013-lost-intellisense-from-css-to-less
+title: "VS2013 lost intellisense from css to less"
+
+question_id: 26648748
+link: http://stackoverflow.com/questions/26648748/rtl-support-for-bootstrap-3-submenus
+title: "RTL support for bootstrap 3 submenus"
+
+question_id: 26621669
+link: http://stackoverflow.com/questions/26621669/bootstrap-3-removing-padding-margin-on-small-devices
+title: "Bootstrap 3 - Removing padding/margin on small devices"
+
+question_id: 26659235
+link: http://stackoverflow.com/questions/26659235/could-not-find-pg-0-17-1-in-any-of-the-sources
+title: "Could not find pg-0.17.1 in any of the sources"
+
+question_id: 26694675
+link: http://stackoverflow.com/questions/26694675/store-jsignature-output-to-mysql-to-be-redrawn-on-separate-page
+title: "Store JSignature output to mysql to be redrawn on separate page"
+
+question_id: 26689199
+link: http://stackoverflow.com/questions/26689199/how-to-read-file-data-applications-document-directory-in-swift
+title: "How to read file data Applications document directory in swift?"
+
+question_id: 26694428
+link: http://stackoverflow.com/questions/26694428/school-ssh-server-php-wont-compile
+title: "School SSH Server PHP won&#39;t compile"
+
+question_id: 26694672
+link: http://stackoverflow.com/questions/26694672/how-do-i-cast-an-object-to-a-new-instance-of-an-object-on-one-line-c
+title: "How do I cast an object to a new instance of an object on one line? C#"
+
+question_id: 26694606
+link: http://stackoverflow.com/questions/26694606/retrieve-correct-data-in-table-view
+title: "retrieve correct data in table view"
+
+question_id: 26599659
+link: http://stackoverflow.com/questions/26599659/if-a-pipeline-stage-is-stalled-due-to-a-dependency-do-all-the-stages-which-foll
+title: "If a pipeline stage is stalled due to a dependency, do all the stages which follow get stalled for that cycle?"
+
+question_id: 26694509
+link: http://stackoverflow.com/questions/26694509/qt-keep-translate-in-qapplication
+title: "Qt keep translate in QApplication"
+
+question_id: 26694559
+link: http://stackoverflow.com/questions/26694559/how-can-i-compare-records-in-multi-dimentional-array-and-add-unique-records
+title: "How can i compare records in Multi Dimentional Array and add unique records"
+
