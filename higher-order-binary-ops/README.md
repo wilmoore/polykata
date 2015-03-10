@@ -59,8 +59,8 @@ This originally [started as a gist](https://gist.github.com/wilmoore/5559376).
   - **CON**: None that I can see so far. I'd caution that the functional bias of the language may seem daunting to some.
 
 - [CoffeeScript](less-than-100.coffee)
-  - **PRO**: JavaScript a little lipstick.
-  - **CON**: Cute; however, doesn't provide _enough_ value over raw JavaScript or something like [Babel](https://babeljs.io).
+  - **PRO**: Normalizes some of JavaScripts gotchas.
+  - **CON**: Doesn't provide _enough_ value over raw JavaScript or something like [Babel](https://babeljs.io).
 
 - [JavaScript](less-than-100.js)
   - **PRO**: JavaScript is very expressive and quite fast. NodeJS and modern browsers make JavaScript fun.
