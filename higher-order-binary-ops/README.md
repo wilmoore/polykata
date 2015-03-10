@@ -7,12 +7,16 @@ This originally [started as a gist](https://gist.github.com/wilmoore/5559376).
 ## Languages Represented
 
 - [Swift](less-than-100.swift)
-  - **PRO**: First class currying, concise syntax (event better than scala/ruby).
-  - **CON**: No implicit return outside of closure, doesn't run on linux/windows (yet), namespaces instead of a decent module/package system (yuck).
+  - **PRO**: Concise syntax, literal curry syntax, class methods are curried, nice enum syntax, nice optional types and generics support.
+  - **CON**: No implicit return in plain functions, weird cocoa/NS history, things that should be built-in rely heavily on `import Foundation`, doesn't run on linux/windows (yet), namespaces instead of a decent module/package system (yuck).
+
+- [Erlang](less-than-100.erl)
+  - **PRO**: Nice module system with explicit import/export syntax and a sane requirement that imports/exports must be defined at the top of the module.
+  - **CON**: No auto-currying, required to learn non-intuitive punctuation-heavy syntax. Long history of no good dependency manager until recently so it's quite behind.
 
 - [Elixir](less-than-100.ex)
   - **PRO**: Very expressive language on top of the Erlang VM. Whoa...where have you been all my life?
-  - **CON**: Too new and doesn't _yet_ offer _enough_ benefit over Node/JavaScript on the server. But for new projects...perhaps?
+  - **CON**: No auto-currying, weird closure syntax.
 
 - [Scala](less-than-100.scala)
   - **PRO**: First class currying and concise syntax.
@@ -37,6 +41,10 @@ This originally [started as a gist](https://gist.github.com/wilmoore/5559376).
 - [Python](less-than-100.py)
   - **PRO**: Pretty little language, everything is explicit, list comprehensions, kitchen sink standard library.
   - **CON**: Kitchen sink standard library, may be slower than Ruby...that's actually a pretty impressive feat.
+
+- [Lua](less-than-100.lua)
+  - **PRO**: Pretty easy to pick up. Clear syntax (much nicer than PHP); good documentation.
+  - **CON**: Almost nobody talks about it and I have no idea if there is a module system or dependency manager.
 
 - [PHP](less-than-100.php)
   - **PRO**: A very prolifit language. It's everywhere.
