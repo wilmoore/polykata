@@ -6,53 +6,57 @@ This originally [started as a gist](https://gist.github.com/wilmoore/5559376).
 
 ## Languages Represented
 
-- [Scala](#file-less-than-100-scala)
+- [Swift](less-than-100.swift)
+  - **PRO**: First class currying, concise syntax (event better than scala/ruby).
+  - **CON**: No implicit return outside of closure, doesn't run on linux/windows (yet), namespaces instead of a decent module/package system (yuck).
+
+- [Elixir](less-than-100.ex)
+  - **PRO**: Very expressive language on top of the Erlang VM. Whoa...where have you been all my life?
+  - **CON**: Too new and doesn't _yet_ offer _enough_ benefit over Node/JavaScript on the server. But for new projects...perhaps?
+
+- [Scala](less-than-100.scala)
   - **PRO**: First class currying and concise syntax.
-  - **CON**: JVM...no thanks.
+  - **CON**: JVM...no thanks, namespaces instead of a decent module/package system (yuck).
 
-- [Clojure](#file-less-than-100-clj)
+- [Go](less-than-100.go)
+  - **PRO**: Cross-compile to other architectures.
+  - **CON**: I must be doing it wrong because there is no way the language is this fugly (UPDATE: actually, it seems this was a design choice; no thanks).
+
+- [Clojure](less-than-100.clj)
   - **PRO**: Impressive...concise syntax; very clean for a paren-happy language. 
-  - **CON**: JVM...no thanks.
+  - **CON**: JVM...no thanks, namespaces instead of a decent module/package system (yuck)..
 
-- [Groovy](#file-less-than-100-groovy)
+- [Groovy](less-than-100.groovy)
   - **PRO**: Ruby on the JVM...cute!
-  - **CON**: JVM...no thanks.
+  - **CON**: JVM...no thanks, namespaces instead of a decent module/package system (yuck)..
 
-- [Ruby](#file-less-than-100-rb)
+- [Ruby](less-than-100.rb)
   - **PRO**: The most beautiful language ever + Enumerable standard library module.
-  - **CON**: Slow VM, non-trivial install (just use RVM is not a good answer IMHO), the gems system needs help (bundler makes life better, but it's no panacea).
+  - **CON**: Slow VM w/ global interpreter lock, non-trivial and fairly large install (just use RVM is not a good answer IMHO), the gems system needs help (bundler makes life better, but it's no panacea), importing a module is global (yuck).
 
-- [Python](#file-less-than-100-py)
+- [Python](less-than-100.py)
   - **PRO**: Pretty little language, everything is explicit, list comprehensions, kitchen sink standard library.
   - **CON**: Kitchen sink standard library, may be slower than Ruby...that's actually a pretty impressive feat.
 
-- [PHP](#file-less-than-100-php)
-  - **PRO**: It's everywhere...like mcdonalds.
-  - **CON**: It's everywhere...like mcdonalds, lacks expressiveness, rediculous configuration system, the PEAR packaging system is horrible and composer still doesn't have enough mindshare.
+- [PHP](less-than-100.php)
+  - **PRO**: A very prolifit language. It's everywhere.
+  - **CON**: It's everywhere, lacks expressiveness, configuration system with lots of surprises.
 
-- [Elixir](#file-less-than-100-ex)
-  - **PRO**: Ruby-like syntax on top of the Erlang VM. Whoa...where have you been all my life?
-  - **CON**: Too new to tell...
-
-- [Go](#file-less-than-100-go)
-  - **PRO**: Cross-compile to other architectures.
-  - **CON**: I must be doing it wrong because there is no way the language is this fugly (yup, fugly).
-
-- [Dart](#file-less-than-100-dart)
+- [Dart](less-than-100.dart)
   - **PRO**: Extremely intuitive and fairly concise.
-  - **CON**: Too new to tell...
+  - **CON**: Nobody (self included) seems to care.
 
-- [LiveScript](#file-less-than-100-op-ls) ([curried](#file-less-than-100-ls))
+- [LiveScript](less-than-100.op-ls) ([curried](less-than-100.ls))
   - **PRO**: This is what I thought CoffeeScript was going to be + hints of Scala.
   - **CON**: None that I can see so far. I'd caution that the functional bias of the language may seem daunting to some.
 
-- [CoffeeScript](#file-less-than-100-coffee)
+- [CoffeeScript](less-than-100.coffee)
   - **PRO**: JavaScript a little lipstick.
-  - **CON**: Cute; however, doesn't provide _enough_ value over raw JavaScript to warrent the overhead.
+  - **CON**: Cute; however, doesn't provide _enough_ value over raw JavaScript or something like [Babel](https://babeljs.io).
 
-- [JavaScript](#file-less-than-100-js)
-  - **PRO**: JavaScript is very expressive and quite fast these days. NodeJS and modern browsers make JavaScript fun.
-  - **CON**: Lots of gotchas in the language and in the browser.
+- [JavaScript](less-than-100.js)
+  - **PRO**: JavaScript is very expressive and quite fast. NodeJS and modern browsers make JavaScript fun.
+  - **CON**: Lots of gotchas in the language and in the browser/DOM.
 
 ## Inspiration
 
