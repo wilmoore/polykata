@@ -38,7 +38,7 @@ This originally [started as a gist](https://gist.github.com/wilmoore/5559376).
 
 - [CoffeeScript](less-than-100.coffee) (❌ - would not use in production)
   - **PRO**: Normalizes some of JavaScript's gotchas. The existential operator is genuinely useful. CoffeeScript is a brilliant experiment.
-  - **CON**: Has lots of unexpected nuances; unfortunately you still must to understand JavaScript nuances so you've increased your problems. CoffeeScript ties your hands in ways that are non-obvious until you learn more about JavaScript; by then, the damage is done. It doesn't do anything to cure the DOM APIs (Yes, most of your JS woes are with the DOM, not JavaScript). Encourages users to forget that JavaScript is a prototypal language.
+  - **CON**: Has lots of unexpected nuances; unfortunately you still need to understand JavaScript nuances so you've increased your problems. CoffeeScript ties your hands in ways that are non-obvious until you learn more about JavaScript; by then, the damage is done. It doesn't do anything to cure the DOM APIs (Yes, most of your JS woes are with the DOM, not JavaScript). Encourages users to forget that JavaScript is a prototypal language.
 
   READ: [Peter Lyons: From CoffeeScript Back to JavaScript](http://peterlyons.com/problog/2014/01/from-coffeescript-back-to-javascript)
 
