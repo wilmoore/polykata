@@ -1,30 +1,46 @@
 # Higher Order Binary Operations
 
-Filter a list by applying a generated comparison operatation (function). Multiple languages and paradigms are represented to reveal whatever you are looking to reveal :).
+Filter a list by applying a generated comparison operation (function). Multiple languages and paradigms are represented to reveal whatever you are looking to reveal :).
 
 This originally [started as a gist](https://gist.github.com/wilmoore/5559376).
+
+## Highest Priorities
+
+- sane module system
+- expressiveness
+- first-class functions
 
 ## Languages Represented
 
 - [Swift](less-than-100.swift) (💚 - would use in production)
-  - **PRO**: Concise syntax, literal curry syntax, class methods are curried, nice enum syntax, nice optional types and generics support.
-  - **CON**: No implicit return in plain functions, weird cocoa/NS history, things that should be built-in rely heavily on `import Foundation`, doesn't run on linux/windows (yet), namespaces instead of a decent module/package system (yuck).
+  - **PRO**: Expressive, first-class functions, literal curry syntax, class methods are curried, nice enum syntax, nice optional types and generics support.
+  - **CON**: No implicit return in plain functions, weird cocoa/NS history, no regular expression literals, `assert` does not throw an exception (WTF?), overly tight coupling between test runner, reporting, and Xcode, doesn't run on linux/windows (yet), namespaces instead of a decent module/package system (yuck).
 
 - [Erlang](less-than-100.erl) (💚 - would use in production)
-  - **PRO**: Nice module system with explicit import/export syntax and a sane requirement that imports/exports must be defined at the top of the module.
+  - **PRO**: Expressive, first-class functions, nice module system with explicit import/export syntax and a sane requirement that imports/exports must be defined at the top of the module.
   - **CON**: No auto-currying, required to learn non-intuitive punctuation-heavy syntax. Long history of no good dependency manager until recently so it's quite behind.
 
 - [Elixir](less-than-100.ex) (💚 - would use in production)
-  - **PRO**: Very expressive language on top of the Erlang VM. Whoa...where have you been all my life?
-  - **CON**: No auto-currying, weird closure syntax.
+  - **PRO**: Expressive, first-class functions, utilizes the Erlang VM. Live code upgrades (development and production), pattern matching, built-in unit-testing module, built-in concurrency primitives, built-in build tool, built-in dependency management, a sane non-global scope polluting module system, automatic distributed processing, first-class function documentation, literal regular expression syntax, non-blocking and multi-core by default.
+  - **CON**: No auto-currying, weird closure syntax, not strongly-typed, no breakpoint capable debugger.
 
 - [JavaScript](less-than-100.js) (💚 - would use in production)
-  - **PRO**: JavaScript is very expressive and quite fast. NodeJS and modern browsers make JavaScript fun.
-  - **CON**: Lots of gotchas in the language and in the browser/DOM.
+  - **PRO**: Expressive, first-class functions, prototypal language. Nice module system (CommonJS/NodeJS) that resembles the Erlang module system. Excellent dependency management with npm (npm is good for NodeJS as well as the browser). Community is commited to single-purpose modules.
+  - **CON**: Has some annoying gotchas (though not as many outside of browser/DOM API) like automatic type conversion, ASI, and crappy C-isms. Scope (i.e. `this`) is a bit awkward for those new to the language.
+
+  Recommentations:
+    - take the time to learn about prototypes and `Function.prototype.{apply,bind,call}` and it all all make sense.
+    - use [Babel](https://babeljs.io) to get access to generators, native promises, string interpolation, named/default parameters, and more.
 
 - [Ruby](less-than-100.rb) (✔ - would use reluctantly in production in certain situations)
   - **PRO**: Pretty little language.
-  - **CON**: Slow VM w/ global interpreter lock, huge standard library, non-trivial and fairly large install (just use RVM is not a good answer IMHO), the gems system needs help (bundler makes life better, but it's no panacea), importing a module is global (yuck).
+  - **CON**: Slowish VM with global interpreter lock (though it is getting better), huge standard library, non-trivial and fairly large install (just use RVM is not a good answer IMHO), the gems system needs help (bundler makes life better, but it's no panacea), global scope polluting module system (yuck).
+
+- [CoffeeScript](less-than-100.coffee) (❌ - would not use in production)
+  - **PRO**: Normalizes some of JavaScript's gotchas. The existential operator is genuinely useful. CoffeeScript is a brilliant experiment.
+  - **CON**: Has lots of unexpected nuances; unfortunately you still must to understand JavaScript nuances so you've increased your problems. CoffeeScript ties your hands in ways that are non-obvious until you learn more about JavaScript; by then, the damage is done. It doesn't do anything to cure the DOM APIs (Yes, most of your JS woes are with the DOM, not JavaScript). Encourages users to forget that JavaScript is a prototypal language.
+
+  READ: [Peter Lyons: From CoffeeScript Back to JavaScript](http://peterlyons.com/problog/2014/01/from-coffeescript-back-to-javascript)
 
 - [Scala](less-than-100.scala) (❌ - would not use in production)
   - **PRO**: First class currying and concise syntax.
@@ -35,12 +51,12 @@ This originally [started as a gist](https://gist.github.com/wilmoore/5559376).
   - **CON**: I must be doing it wrong because there is no way the language is this fugly (UPDATE: actually, it seems this was a design choice; no thanks).
 
 - [Clojure](less-than-100.clj) (❌ - would not use in production)
-  - **PRO**: Impressive...concise syntax; very clean for a paren-happy language. 
-  - **CON**: JVM...no thanks, namespaces instead of a decent module/package system (yuck)..
+  - **PRO**: Impressive...concise syntax; very clean for a parenthesis-happy language.
+  - **CON**: JVM...no thanks, namespaces instead of a decent module/package system (yuck).
 
 - [Groovy](less-than-100.groovy) (❌ - would not use in production)
   - **PRO**: Ruby on the JVM...cute!
-  - **CON**: JVM...no thanks, namespaces instead of a decent module/package system (yuck)..
+  - **CON**: JVM...no thanks, namespaces instead of a decent module/package system (yuck).
 
 - [Python](less-than-100.py) (❌ - would not use in production)
   - **PRO**: Pretty little language, everything is explicit, list comprehensions, kitchen sink standard library.
@@ -51,8 +67,8 @@ This originally [started as a gist](https://gist.github.com/wilmoore/5559376).
   - **CON**: Almost nobody talks about it and I have no idea if there is a module system or dependency manager.
 
 - [PHP](less-than-100.php) (❌ - would not use in production)
-  - **PRO**: A very prolifit language. It's everywhere.
-  - **CON**: It's everywhere, lacks expressiveness, configuration system with lots of surprises.
+  - **PRO**: A very prolific language. It's everywhere.
+  - **CON**: It's everywhere, lacks expressiveness, configuration system with lots of surprises. Not well-designed. Encourages bad practices. Global scope polluting module system. Always behind on useful language features. _Mostly_ dysfunctional leadership.
 
 - [Dart](less-than-100.dart) (❌ - would not use in production)
   - **PRO**: Extremely intuitive and fairly concise.
@@ -61,10 +77,6 @@ This originally [started as a gist](https://gist.github.com/wilmoore/5559376).
 - [LiveScript](less-than-100.op-ls) ([curried](less-than-100.ls)) (❌ - would not use in production)
   - **PRO**: This is what I thought CoffeeScript was going to be + hints of Scala.
   - **CON**: None that I can see so far. I'd caution that the functional bias of the language may seem daunting to some.
-
-- [CoffeeScript](less-than-100.coffee) (❌ - would not use in production)
-  - **PRO**: Normalizes some of JavaScripts gotchas.
-  - **CON**: Doesn't provide _enough_ value over raw JavaScript or something like [Babel](https://babeljs.io).
 
 ## Inspiration
 
