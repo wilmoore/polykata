@@ -21,14 +21,14 @@ This originally [started as a gist](https://gist.github.com/wilmoore/5559376).
   - **CON**: No auto-currying, required to learn non-intuitive punctuation-heavy syntax. Long history of no good dependency manager until recently so it's quite behind.
 
 - [Elixir](less-than-100.ex) (💚 - would use in production)
-  - **PRO**: Expressive, first-class functions, utilizes the Erlang VM. Live code upgrades (development and production), pattern matching, built-in automated testing, excellent unicode support, built-in concurrency primitives, built-in build tool, built-in dependency management, a sane non-global scope polluting module system, automatic distributed processing, first-class function documentation, literal regular expression syntax, non-blocking and multi-core by default.
+  - **PRO**: Expressive, first-class functions, utilizes the Erlang VM. Live code upgrades (development and production), pattern matching, built-in automated testing, excellent Unicode support, built-in concurrency primitives, built-in build tool, built-in dependency management, a sane non-global scope polluting module system, automatic distributed processing, first-class function documentation, literal regular expression syntax, non-blocking and multi-core by default.
   - **CON**: No auto-currying, weird closure syntax, not strongly-typed, no breakpoint capable debugger.
 
 - [JavaScript](less-than-100.js) (💚 - would use in production)
-  - **PRO**: Expressive, first-class functions, prototypal language. Nice module system (CommonJS/NodeJS) that resembles the Erlang module system. Excellent dependency management with npm (npm is good for NodeJS as well as the browser). Great testing tools. Community is commited to single-purpose modules.
+  - **PRO**: Expressive, first-class functions, prototypal language. Nice module system (CommonJS/NodeJS) that resembles the Erlang module system. Excellent dependency management with npm (npm is good for NodeJS as well as the browser). Great testing tools. Community is committed to single-purpose modules.
   - **CON**: Has some annoying gotchas (though not as many outside of browser/DOM API) like automatic type conversion, ASI, and crappy C-isms. Scope (i.e. `this`) is a bit awkward for those new to the language.
 
-  Recommentations:
+  Recommendations:
     - take the time to learn about prototypes and `Function.prototype.{apply,bind,call}` and it all all make sense.
     - use [Babel](https://babeljs.io) to get access to generators, native promises, string interpolation, named/default parameters, and more.
 
@@ -54,10 +54,11 @@ This originally [started as a gist](https://gist.github.com/wilmoore/5559376).
 
 - [Go](less-than-100.go) (❌ - would not use in production)
   - **PRO**: Cross-compile to multiple architectures. Lots of useful tools are included. I've seen people build some really neat things with Go.
-  - **CON**: Ugly, non-expressive language. `GOPATH` (seriously?). The type system is not great compared to other modern staticly-typed languages (i.e. requires lots of boilerplate to do anything interesting). Classes can have constructors, but there's no way to force calling the constructor when instantiating the class. No central package authority so dependencies can just disappear. In some regards, it's a better `c`, yet in some areas, it's worse.
+  - **CON**: Ugly, non-expressive language. `GOPATH` (seriously?). Modules are installed globally by default. The type system is not great compared to other modern statically-typed languages (i.e. requires lots of boilerplate to do anything interesting). Classes can have constructors, but there's no way to force calling the constructor when instantiating the class. No central package authority so dependencies can just disappear. In some regards, it's a better `c`, yet in some areas, it's worse.
 
   Summary:
-    - Admittedly, there is a legitmate place for such a language, so ultimately, Go will likely continue to do well for a while.
+    - Admittedly, there is a legitimate place for such a language, so ultimately, Go will likely continue to do well for a while.
+    - Google has a reputation of putting out spectacular products; unfortunately, this means that there will always be a huge number of people that blindly accept even their sub-par projects (i.e. AngularJS).
 
 - [Clojure](less-than-100.clj) (❌ - would not use in production)
   - **PRO**: Impressive...concise syntax; very clean for a parenthesis-happy language.
