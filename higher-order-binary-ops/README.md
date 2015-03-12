@@ -47,11 +47,10 @@ This originally [started as a gist](https://gist.github.com/wilmoore/5559376).
   - **CON**: JVM...no thanks, namespaces instead of a decent module/package system (yuck).
 
 - [Go](less-than-100.go) (❌ - would not use in production)
-  - **PRO**: Cross-compile to multiple architectures. Lots of useful tools are included.
+  - **PRO**: Cross-compile to multiple architectures. Lots of useful tools are included. I've seen people build some really neat things with Go.
   - **CON**: Ugly, non-expressive language. `GOPATH` (seriously?). The type system is not great compared to other modern staticly-typed languages (i.e. requires lots of boilerplate to do anything interesting). Classes can have constructors, but there's no way to force calling the constructor when instantiating the class. No central package authority so dependencies can just disappear. In some regards, it's a better `c`, yet in some areas, it's worse.
 
   Summary:
-    - Will likely continue to be popular with those that care more about raw speed than convenience or aesthetics.
     - Admittedly, there is a legitmate place for such a language, so ultimately, Go will likely continue to do well for a while.
 
 - [Clojure](less-than-100.clj) (❌ - would not use in production)
