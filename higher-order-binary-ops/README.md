@@ -43,8 +43,14 @@ This originally [started as a gist](https://gist.github.com/wilmoore/5559376).
   READ: [Peter Lyons: From CoffeeScript Back to JavaScript](http://peterlyons.com/problog/2014/01/from-coffeescript-back-to-javascript)
 
 - [Scala](less-than-100.scala) (❌ - would not use in production)
-  - **PRO**: First class currying and concise syntax.
+  - **PRO**: Expressive, Nice type system, first class currying, great ecosystem of useful libraries.
   - **CON**: JVM...no thanks, namespaces instead of a decent module/package system (yuck).
+
+  Summary:
+    - I actually really like Scala; however, I have a (probably unfair) aversion to the JVM and JVM-related tooling (i.e. Maven, etc.) and namespacing that keeps me from caring enough.
+    - I almost got into it; however, I got distracted by NodeJS (I write lots of JSON APIs) and never really looked back.
+    - I almost gave it another crack, then I learned of Rust and Elixir.
+    - Given a choice between the JVM and Go, I'd of course choose Scala (which I like) on the JVM.
 
 - [Go](less-than-100.go) (❌ - would not use in production)
   - **PRO**: Cross-compile to multiple architectures. Lots of useful tools are included. I've seen people build some really neat things with Go.
