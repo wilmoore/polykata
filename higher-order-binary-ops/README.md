@@ -21,11 +21,11 @@ This originally [started as a gist](https://gist.github.com/wilmoore/5559376).
   - **CON**: No auto-currying, required to learn non-intuitive punctuation-heavy syntax. Long history of no good dependency manager until recently so it's quite behind.
 
 - [Elixir](less-than-100.ex) (💚 - would use in production)
-  - **PRO**: Expressive, first-class functions, utilizes the Erlang VM. Live code upgrades (development and production), pattern matching, built-in unit-testing module, built-in concurrency primitives, built-in build tool, built-in dependency management, a sane non-global scope polluting module system, automatic distributed processing, first-class function documentation, literal regular expression syntax, non-blocking and multi-core by default.
+  - **PRO**: Expressive, first-class functions, utilizes the Erlang VM. Live code upgrades (development and production), pattern matching, built-in automated testing, excellent unicode support, built-in concurrency primitives, built-in build tool, built-in dependency management, a sane non-global scope polluting module system, automatic distributed processing, first-class function documentation, literal regular expression syntax, non-blocking and multi-core by default.
   - **CON**: No auto-currying, weird closure syntax, not strongly-typed, no breakpoint capable debugger.
 
 - [JavaScript](less-than-100.js) (💚 - would use in production)
-  - **PRO**: Expressive, first-class functions, prototypal language. Nice module system (CommonJS/NodeJS) that resembles the Erlang module system. Excellent dependency management with npm (npm is good for NodeJS as well as the browser). Community is commited to single-purpose modules.
+  - **PRO**: Expressive, first-class functions, prototypal language. Nice module system (CommonJS/NodeJS) that resembles the Erlang module system. Excellent dependency management with npm (npm is good for NodeJS as well as the browser). Great testing tools. Community is commited to single-purpose modules.
   - **CON**: Has some annoying gotchas (though not as many outside of browser/DOM API) like automatic type conversion, ASI, and crappy C-isms. Scope (i.e. `this`) is a bit awkward for those new to the language.
 
   Recommentations:
