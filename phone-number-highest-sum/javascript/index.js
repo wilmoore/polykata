@@ -4,7 +4,7 @@
  * imports.
  */
 
-var sum = require('sum.js');
+var sum = require('sum.js')
 
 /*!
  * exports.
