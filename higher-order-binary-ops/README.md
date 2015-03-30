@@ -34,7 +34,7 @@ This originally [started as a gist](https://gist.github.com/wilmoore/5559376).
 
 - [Ruby](less-than-100.rb) (✔ - would use reluctantly in production in certain situations)
   - **PRO**: Pretty little language.
-  - **CON**: Slowish VM with global interpreter lock (though it is getting better), huge standard library, non-trivial and fairly large install (just use RVM is not a good answer IMHO), the gems system needs help (bundler makes life better, but it's no panacea), global scope polluting module system (yuck).
+  - **CON**: Slowish VM with global interpreter lock (though it is getting better), blocks are limited (i.e. not first class), huge standard library, non-trivial and fairly large install (just use RVM is not a good answer IMHO), the gems system needs help (bundler makes life better, but it's no panacea), global scope polluting module system (yuck).
 
 - [CoffeeScript](less-than-100.coffee) (❌ - would not use in production)
   - **PRO**: Normalizes some of JavaScript's gotchas. The existential operator is genuinely useful. CoffeeScript is a brilliant experiment.

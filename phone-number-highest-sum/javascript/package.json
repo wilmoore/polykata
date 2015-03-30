@@ -1,0 +1,27 @@
+{
+  "name": "phone-number-highest-sum",
+  "version": "1.0.0",
+  "description": "Phone number with highest sum",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec 'npm run test' -e 'js json'",
+    "pretest": "npm run standard",
+    "standard:format": "standard-format",
+    "standard": "standard",
+    "test": "node test.js test/**/*.js | tap-spec"
+  },
+  "author": "Wil Moore III <wil.moore@wilmoore.com> (http://github.com/wilmoore)",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^0.16.2",
+    "nodemon": "^1.3.7",
+    "standard": "^3.3.0",
+    "standard-format": "^1.3.5",
+    "tap-spec": "^2.2.2",
+    "tape": "^3.5.0",
+    "tape-catch": "^1.0.4"
+  },
+  "dependencies": {
+    "sum.js": "^0.6.0"
+  }
+}
