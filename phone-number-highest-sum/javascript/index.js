@@ -10,29 +10,28 @@ var sum = require('sum.js')
  * exports.
  */
 
-module.exports = high
-
-function high (strings) {
-  return toStruct(strings)[0].string
+module.exports = function high (strings) {
+  return strings.map(toStruct).sort(ranked)[0].out
 }
 
-function toStruct (list) {
-  return list.map(function (string, idx) {
-    return {
-      string: string,
-      sum: sum(str2arr(str2num(string))),
-      idx: idx
-    }
-  }).sort(ranked)
+/**
+ * Return an object composed of:
+ *  - out (original input string)
+ *  - sum (string's numbers summed)
+ *  - idx (position in array)
+ */
+
+function toStruct (string, idx) {
+  return {
+    out: string,
+    sum: sum(string.replace(/[^\d]/g, '').split('')),
+    idx: idx
+  }
 }
 
-function str2arr (string) {
-  return string.split('')
-}
-
-function str2num (string) {
-  return string.replace(/[^\d]/g, '')
-}
+/**
+ * Order by descending by .sum, and tie break using .idx.
+ */
 
 function ranked (a, b) {
   return (a.sum === b.sum)
