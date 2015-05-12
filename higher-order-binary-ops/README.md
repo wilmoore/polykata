@@ -12,10 +12,6 @@ This originally [started as a gist](https://gist.github.com/wilmoore/5559376).
 
 ## Languages Represented
 
-- [Haskell](less-than-100.hs) (💚 - would use in production)
-  - **PRO**: Expressive, first-class functions, generics, curry all the things, lazy eval by default, no OOP (just functions), type inference, static/strong type system, compiled, concurrent, fast.
-  - **CON**: Too early in my research to say...definitely nothing obviously egregious yet though.
-
 - [Swift](less-than-100.swift) (💚 - would use in production)
   - **PRO**: Expressive, first-class functions, literal curry syntax, class methods are curried, nice enum syntax, nice optional types and generics support.
   - **CON**: No implicit return in plain functions, weird cocoa/NS history, no regular expression literals, `assert` does not throw an exception (WTF?), overly tight coupling between test runner, reporting, and Xcode, doesn't run on linux/windows (yet), namespaces instead of a decent module/package system (yuck).
@@ -40,6 +36,10 @@ This originally [started as a gist](https://gist.github.com/wilmoore/5559376).
   - **PRO**: Pretty little language.
   - **CON**: Slowish VM with global interpreter lock (though it is getting better), blocks are limited (i.e. not first class), huge standard library, non-trivial and fairly large install (just use RVM is not a good answer IMHO), the gems system needs help (bundler makes life better, but it's no panacea), global scope polluting module system (yuck).
 
+- [Haskell](less-than-100.hs) (✔ - not 100% sure yet, but it is starting to look pretty good)
+  - **PRO**: Expressive, first-class functions, generics, curry all the things, lazy eval by default, no OOP (just functions), type inference, static/strong type system, compiled, concurrent, fast.
+  - **CON**: String interpolation does not seem to be built-in. There are a few existing third party libraries; however, there is no defacto standard AFAICT.
+
 - [CoffeeScript](less-than-100.coffee) (❌ - would not use in production)
   - **PRO**: Normalizes some of JavaScript's gotchas. The existential operator is genuinely useful. CoffeeScript is a brilliant experiment.
   - **CON**: Has lots of unexpected nuances; unfortunately you still need to understand JavaScript nuances so you've increased your problems. CoffeeScript ties your hands in ways that are non-obvious until you learn more about JavaScript; by then, the damage is done. It doesn't do anything to cure the DOM APIs (Yes, most of your JS woes are with the DOM, not JavaScript). Encourages users to forget that JavaScript is a prototypal language.
@@ -58,7 +58,7 @@ This originally [started as a gist](https://gist.github.com/wilmoore/5559376).
 
 - [Go](less-than-100.go) (❌ - would not use in production)
   - **PRO**: Cross-compile to multiple architectures. Lots of useful tools are included. I've seen people build some really neat things with Go.
-  - **CON**: Ugly, non-expressive language. `GOPATH` (seriously?). Modules are installed globally by default. The type system is not great compared to other modern statically-typed languages (i.e. requires lots of boilerplate to do anything interesting). Classes can have constructors, but there's no way to force calling the constructor when instantiating the class. No central package authority so dependencies can just disappear. In some regards, it's a better `c`, yet in some areas, it's worse.
+  - **CON**: Ugly, non-expressive language. `GOPATH` (seriously?). Modules are installed globally by default. The type system is not great compared to other modern statically-typed languages (i.e. requires lots of boilerplate to do anything interesting). Classes can have constructors, but there's no way to force calling the constructor when instantiating the class. No central package authority so dependencies can just disappear. In some regards, it's a better `c`, yet in some areas, it's worse. No generics (no, maps and slices won't __cut__ it).
 
   Summary:
     - Admittedly, there is a legitimate place for such a language, so ultimately, Go will likely continue to do well for a while.
