@@ -12,6 +12,10 @@ This originally [started as a gist](https://gist.github.com/wilmoore/5559376).
 
 ## Languages Represented
 
+- [Haskell](less-than-100.hs) (💚 - would use in production)
+  - **PRO**: Expressive, first-class functions, generics, curry all the things, lazy eval by default, no OOP (just functions), type inference, static/strong type system, compiled, concurrent, fast.
+  - **CON**: Too early in my research to say...definitely nothing obviously egregious yet though.
+
 - [Swift](less-than-100.swift) (💚 - would use in production)
   - **PRO**: Expressive, first-class functions, literal curry syntax, class methods are curried, nice enum syntax, nice optional types and generics support.
   - **CON**: No implicit return in plain functions, weird cocoa/NS history, no regular expression literals, `assert` does not throw an exception (WTF?), overly tight coupling between test runner, reporting, and Xcode, doesn't run on linux/windows (yet), namespaces instead of a decent module/package system (yuck).
