@@ -1,0 +1,38 @@
+{
+  "name": "oloo-game-player-poc",
+  "description": "OLOO (objects linked to other objects) pattern explored through game player objects.",
+  "version": "0.0.0",
+  "author": "Wil Moore III <wil.moore@wilmoore.com>",
+  "dependencies": {
+    "create-object": "^0.1.1",
+    "object-concat": "^0.2.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.7.1",
+    "standard": "^3.13.2",
+    "tap-spec": "^2.2.2",
+    "tape": "^4.2.1",
+    "tape-catch": "^1.0.4"
+  },
+  "homepage": "http://davidwalsh.name/javascript-objects-deconstruction",
+  "keywords": [
+    "initialization",
+    "JS Objects: De'construct'ion",
+    "object",
+    "oloo",
+    "rpg"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "preferGlobal": false,
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wilmoore/polykata.git"
+  },
+  "scripts": {
+    "dev": "nodemon -x 'npm run test --silent' -e 'js json'",
+    "standard": "standard",
+    "test": "npm run standard --silent && node test.js | tap-spec"
+  }
+}
