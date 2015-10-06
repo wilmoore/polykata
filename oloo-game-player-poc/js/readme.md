@@ -1,7 +1,7 @@
 # OLOO Game Player POC
 > OLOO (objects linked to other objects) pattern explored through game player objects.
 
-This POC is based on a [comment] on an article called [JS Objects: De"construct"ion].
+This POC is based on a [comment] on an article called [JS Objects: De"construct"ion]. This POC was not about improving the original RPG's game mechanics so I didn't...it's about providing a clean example of linking objects in JS.
 
 ## Overview
 
