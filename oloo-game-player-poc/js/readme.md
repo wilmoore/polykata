@@ -15,6 +15,12 @@ This POC builds upon three principles:
 
 NOTE: We've swapped out `Object.create` for `npm install --save create-object` since `Object.create` has a pretty horrible property description syntax and doesn't work in older web browsers. The function exported by `create-object` is a replacement for `Object.create` without the superfluous property description cruft. That being said, you can opt to use `Object.create`...in fact, the first rendition used `Object.create` but I factored it out guided by the automated tests.
 
+## Objects to focus on:
+
+- [character]
+- [player]
+- [npc]
+
 ## Usage
 
 ```sh
@@ -31,3 +37,6 @@ npm test
 [Minimalist RPG example written with ES2015 syntax]: https://gist.github.com/bpesquet/6dac5adeb5f31fdc1951
 [comment]: http://davidwalsh.name/javascript-objects-deconstruction#comment-503607
 [JS Objects: De"construct"ion]: http://davidwalsh.name/javascript-objects-deconstruction
+[character]: character.js
+[player]: player.js
+[npc]: npc.js
