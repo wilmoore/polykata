@@ -3,6 +3,18 @@
 
 This POC is based on a [comment] on an article called [JS Objects: De"construct"ion].
 
+## Overview
+
+JavaScript has a very elegant behavior delegation system via object linking; however, instead of embracing this simplicity, many JS developers blindly subscribe to the notion that JS object construction must look similar to Ruby, Java, C++, etc. This is not only untrue, but it is an unnecessary abuse of the language.
+
+This POC builds upon three principles:
+
+0. CommonJS modules.
+0. Composition instead of inheritance.
+0. Object linking/delegation.
+
+NOTE: We've swapped out `Object.create` for `npm install --save create-object` since `Object.create` has a pretty horrible property description syntax and doesn't work in older web browsers. The function exported by `create-object` is a replacement for `Object.create` without the superfluous property description cruft. That being said, you can opt to use `Object.create`...in fact, the first rendition used `Object.create` but I factored it out guided by the automated tests.
+
 ## Usage
 
 ```sh
