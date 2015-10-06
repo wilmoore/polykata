@@ -28,6 +28,10 @@ npm install
 npm test
 ```
 
+## Compatability
+
+- Uses ES6 object literal shorthand assignments for brevity.
+
 ## Resources
 
  - [OLOO (objects linked to other objects) pattern explored (with comparison to the prototype style of the same code) Raw][oloo1]
