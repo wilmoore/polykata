@@ -3,10 +3,7 @@
   "description": "OLOO (objects linked to other objects) pattern explored through game player objects.",
   "version": "0.0.0",
   "author": "Wil Moore III <wil.moore@wilmoore.com>",
-  "dependencies": {
-    "create-object": "^0.1.1",
-    "object-concat": "^0.2.9"
-  },
+  "dependencies": {},
   "devDependencies": {
     "nodemon": "^1.7.1",
     "standard": "^3.13.2",

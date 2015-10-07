@@ -5,7 +5,6 @@
  */
 
 var character = require('./character')
-var concat = require('object-concat')
 var format = require('util').format
 
 /*!
@@ -19,7 +18,7 @@ module.exports = initialize
  */
 
 function initialize (name, health, strength) {
-  return concat(character.apply(null, arguments), {
+  return Object.assign(character.apply(null, arguments), {
     battle,
     describe,
     xp: 0

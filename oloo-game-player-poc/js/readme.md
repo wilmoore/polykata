@@ -9,11 +9,17 @@ JavaScript has a very elegant behavior delegation system via object linking; how
 
 This POC builds upon three principles:
 
-0. CommonJS modules.
-0. Composition instead of inheritance.
-0. Object linking/delegation.
+0. CommonJS [modules].
+0. [Composition] instead of inheritance.
+0. Object [linking/delegation].
 
-NOTE: We've swapped out `Object.create` for `npm install --save create-object` since `Object.create` has a pretty horrible property description syntax and doesn't work in older web browsers. The function exported by `create-object` is a replacement for `Object.create` without the superfluous property description cruft. That being said, you can opt to use `Object.create`...in fact, the first rendition used `Object.create` but I factored it out guided by the automated tests.
+## Additional benefits
+
+- No need to invoke `new` so there is no possiblity of subtle construction bugs.
+- Mitigates the need to wait for special `class` or `constructor` syntax introduced in ES6 to be avaialble and no need to transpile to get it.
+- Mitigates the need to have a ton of indentation up front so code doesn't start out looking messy.
+- Mitigates the need to write `Ctor.prototype.method = function method` boilerplate.
+- Removes the temptation to architect __classes__ when __functions__ will suffice.
 
 ## Objects to focus on:
 
@@ -30,7 +36,9 @@ npm test
 
 ## Compatability
 
-- Uses ES6 object literal shorthand assignments for brevity.
+- Uses ES6 object literal shorthand assignments for brevity so you'll need a capable JS engine or you'll need to transpile.
+- Uses ES6 `Object.assign` so you'll need a [shim][object-assign] or an [alternative][object-concat] if you intend to use in older JS engines.
+- Uses ES5 `Object.create` so you'll need a [shim][object-create] or an [alternative][create-object] if you intend to use in older JS engines.
 
 ## Resources
 
@@ -44,3 +52,10 @@ npm test
 [character]: character.js
 [player]: player.js
 [npc]: npc.js
+[create-object]: https://www.npmjs.com/package/create-object
+[object-concat]: https://www.npmjs.com/package/create-object
+[object-assign]: https://www.npmjs.com/package/object-assign
+[object-create]: https://www.npmjs.com/package/object-create
+[modules]: character.js#L14
+[Composition]: player.js#L22-L26
+[linking/delegation]: player.js#L23-L24

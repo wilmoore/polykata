@@ -4,7 +4,6 @@
  * imports.
  */
 
-var create = require('create-object')
 var format = require('util').format
 
 /*!
@@ -18,7 +17,12 @@ module.exports = initialize
  */
 
 function initialize (name, health, strength) {
-  return create({ name, health, strength, attack })
+  return Object.create({
+    name,
+    health,
+    strength,
+    attack
+  })
 }
 
 /**
