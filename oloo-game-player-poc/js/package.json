@@ -3,6 +3,9 @@
   "description": "OLOO (objects linked to other objects) pattern explored through game player objects.",
   "version": "0.0.0",
   "author": "Wil Moore III <wil.moore@wilmoore.com>",
+  "bugs": {
+    "url": "https://github.com/wilmoore/polykata/issues"
+  },
   "dependencies": {},
   "devDependencies": {
     "nodemon": "^1.7.1",
@@ -25,7 +28,7 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/wilmoore/polykata.git"
+    "url": "https://github.com/wilmoore/polykata/tree/master/oloo-game-player-poc/js"
   },
   "scripts": {
     "dev": "nodemon -x 'npm run test --silent' -e 'js json'",
