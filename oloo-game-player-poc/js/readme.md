@@ -27,7 +27,7 @@ This POC builds upon three principles:
 - [player]
 - [npc]
 
-## Usage
+## Running the unit and integration tests
 
 ```sh
 npm install
