@@ -56,6 +56,6 @@ npm test
 [object-concat]: https://www.npmjs.com/package/create-object
 [object-assign]: https://www.npmjs.com/package/object-assign
 [object-create]: https://www.npmjs.com/package/object-create
-[modules]: character.js#L14
-[Composition]: player.js#L22-L26
-[linking/delegation]: player.js#L23-L24
+[modules]: character.js#L13
+[Composition]: player.js#L21-L25
+[linking/delegation]: player.js#L22-L23
