@@ -44,6 +44,7 @@ npm test
 
  - [OLOO (objects linked to other objects) pattern explored (with comparison to the prototype style of the same code) Raw][oloo1]
  - [Minimalist RPG example written with ES2015 syntax]
+ - [The new JS class syntax is no panacea]
 
 [oloo1]: https://gist.github.com/getify/5572383
 [Minimalist RPG example written with ES2015 syntax]: https://gist.github.com/bpesquet/6dac5adeb5f31fdc1951
@@ -59,3 +60,4 @@ npm test
 [modules]: character.js#L13
 [Composition]: player.js#L21-L25
 [linking/delegation]: player.js#L22-L23
+[The new JS class syntax is no panacea]: https://gist.github.com/wilmoore/72971fc5349fe22ed303
